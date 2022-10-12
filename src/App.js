@@ -11,18 +11,17 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const App = () => {
   return (
     <BrowserRouter>
-        <div className='container'>
+        <div className='container-fluid'>
           <div className='fondo'>
-          <Navbar />
-          <Routes>
-              <Route path="/" element={<ItemListContainer />} />
-              <Route path='/categoria/:nombreCategoria' element={<ItemListContainer/>}/>
-              <Route path='/item/:id' element={<ItemDetailContainer />}/>
-              <Route path='/cart' element={<Cart />}/>
-              <Route path='*' element={<PageNotFound />}/>
-              {/* <div className='fondo'> */}
-          </Routes>
-          <Footer />
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<ItemListContainer />} />
+                <Route path='/categoria/:nombreCategoria' element={<ItemListContainer/>}/>
+                <Route path='/item/:id' element={<ItemDetailContainer />}/>
+                <Route path='/cart' element={<Cart />}/>
+                <Route path='*' element={<PageNotFound />}/>
+            </Routes>
+            <Footer />
           </div> 
         </div>
       </BrowserRouter>

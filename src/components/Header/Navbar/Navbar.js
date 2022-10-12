@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className='nav__wrapper'>
       <div className='container-fluid'>
         <nav className='navbar navbar-light'>
-          <Link to='/' className='nav__brand'>Catalogo</Link>
+          <Link to='/' className='nav__brand'>La Cava</Link>
           <ul className={collapse}>
             {navItems.map((item) => (
               <li key={item.id} className='nav-item'>

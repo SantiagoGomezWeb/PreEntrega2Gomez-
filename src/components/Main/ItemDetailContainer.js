@@ -25,14 +25,11 @@ const ItemDetailContainer = () => {
         traerProducto()
             .then((res) => {
                 setItem(res);
-            })
-            .catch((error) => {
-                console.log(error);
             });
     }, [id]);
         
     return (
-        <div className="item-list-container">
+        <div className="itemListContainer">
             <ItemDetail item={item} />
         </div>
     )

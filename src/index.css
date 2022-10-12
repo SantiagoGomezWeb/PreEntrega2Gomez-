@@ -52,10 +52,8 @@ li {
   font-weight: bolder; }
 
 
-
-
 .fondo {
-  height: 90vh;
+  height: 120vh;
   background: url(./img/fondo.png) no-repeat center center fixed;
   background-size: cover;
 }
